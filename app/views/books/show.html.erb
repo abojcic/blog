@@ -1,0 +1,16 @@
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+ 
+<p>
+  <strong>Summary:</strong>
+  <%= @book.content %>
+</p>
+ <h2>BOOK PREGLED</h2>
+
+<%= render 'books/form' %>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', book_path %>
+                    
